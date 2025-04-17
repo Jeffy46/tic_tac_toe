@@ -35,7 +35,7 @@ body *{
 }
 .game-container{
     height: 60vh;
-    width: 40vw;
+    width: 30vw;
     display: flex;
     flex-wrap: wrap;
 }
@@ -46,6 +46,7 @@ body *{
     background-color: lightgreen;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
+    border-radius: 20px;
 }
 .new-game:active{
     background-color: green;
@@ -53,7 +54,34 @@ body *{
 .game-square{
     min-width: 33.3%;
     height:33.3%;
+    background-size: cover;
     border:solid 1px white;
 }
-
-
+.top-left{
+    border-top:0 !important;
+    border-left:0 !important;
+}
+.top-right{
+    border-top:0 !important;
+    border-right: 0 !important;
+}
+.bot-left{
+    border-bottom: 0 !important;
+    border: 0 !important;
+}
+.bot-right{
+    border-bottom: 0 !important;
+    border-right: 0 !important;
+}
+.top-mid{
+    border-top:0 !important;
+}
+.bot-mid{
+    border-bottom: 0 !important;
+}
+.mid-left{
+    border-left: 0 !important;
+}
+.mid-right{
+    border-right: 0 !important;
+}
