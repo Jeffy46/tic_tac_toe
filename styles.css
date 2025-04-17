@@ -6,8 +6,16 @@
 body{
     background-color: black;
     padding:30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.neonText {
+body *{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.neonText, .current-player-turn{
     color: #fff;
     text-shadow:
     0 0 7px #fff,
@@ -23,5 +31,29 @@ body{
     text-align: center;
 }
 .title{
-    font-size:60px;
+    font-size:4em;
 }
+.game-container{
+    height: 60vh;
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.current-player-turn{
+    font-size: 2em;
+}
+.new-game{
+    background-color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+.new-game:active{
+    background-color: green;
+}
+.game-square{
+    min-width: 33.3%;
+    height:33.3%;
+    border:solid 1px white;
+}
+
+
